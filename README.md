@@ -3,7 +3,7 @@
 Nest.js example code.
 
 ## DOWNLOAD LIST
-__npm install bcryptjs --save__
+__npm install bcryptjs --save__ <br>
 __npm install class-validator class-transformer --save__
 
 
