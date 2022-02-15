@@ -38,6 +38,16 @@ export class BoardsService {
       throw new NotFoundException(`Can't find Board with id ${id}`);
     }
   }
+
+  // ID로 게시물 상태 수정하기
+  async updateBoardStatus(id: number, status: BoardStatus): Promise<Board> {
+    const board = await this.getBoardById(id);
+
+    board.status = status;
+    await this.boardRepository.save(board);
+
+    return board;
+  }
 }
 
 // // 모든 게시물 가져오기
