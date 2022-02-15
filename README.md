@@ -6,6 +6,8 @@ Nest.js example code.
 __비밀번호 암호화 라이브러리 : npm install bcryptjs --save__ 
 <br>
 __파이프 라이브러리 : npm install class-validator class-transformer --save__
+<br>
+__JWT 토큰 라이브러리 : npm install @nestjs/jwt @nestjs/passport passport passport-jwt --save__
 
 
 <p align="center">
