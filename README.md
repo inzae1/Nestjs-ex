@@ -3,8 +3,9 @@
 Nest.js example code.
 
 ## DOWNLOAD LIST
-__npm install bcryptjs --save__ <br>
-__npm install class-validator class-transformer --save__
+__비밀번호 암호화 라이브러리 : npm install bcryptjs --save__ 
+<br>
+__파이프 라이브러리 : npm install class-validator class-transformer --save__
 
 
 <p align="center">
