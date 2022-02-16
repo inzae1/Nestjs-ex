@@ -30,7 +30,6 @@ export class AuthController {
   signIn(
     @Body(ValidationPipe) authCredentialsDto: AuthCredentialsDto,
   ): Promise<{ accessToken: string }> {
-    this.logger.verbose(`User "${authCredentialsDto.username}" login.`);
     return this.authService.signIn(authCredentialsDto);
   }
 
