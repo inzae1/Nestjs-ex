@@ -1,0 +1,9 @@
+# default + 개발환경에서 필요한 정보
+db:
+  host: 'localhost'
+  username: 'root'
+  password: '0312'
+  synchronize: true
+
+jwt:
+  secret: 'secret'

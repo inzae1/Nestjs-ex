@@ -8,8 +8,10 @@ __비밀번호 암호화 라이브러리 : npm install bcryptjs --save__
 __파이프 라이브러리 : npm install class-validator class-transformer --save__
 <br>
 __JWT 토큰 라이브러리 : npm install @nestjs/jwt @nestjs/passport passport passport-jwt --save__
-
-
+<br>
+__설정 모듈 (Windows) : npm install -g win-node-env__
+<br>
+__설정 모듈 (Mac) : npm install config --save__
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>

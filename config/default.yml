@@ -1,0 +1,11 @@
+# 기본설정
+server:
+  port: 3000
+
+db:
+  type: 'mariadb'
+  port: 3306
+  database: 'inzae'
+
+jwt:
+  expiresIn: 3600

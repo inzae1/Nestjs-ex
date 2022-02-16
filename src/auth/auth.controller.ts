@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Logger,
   Post,
   Req,
   UseGuards,
@@ -14,6 +15,8 @@ import { User } from './user.entity';
 
 @Controller('auth')
 export class AuthController {
+  private logger = new Logger('AuthController');
+
   constructor(private authService: AuthService) {}
 
   @Post('/signup')
@@ -27,6 +30,7 @@ export class AuthController {
   signIn(
     @Body(ValidationPipe) authCredentialsDto: AuthCredentialsDto,
   ): Promise<{ accessToken: string }> {
+    this.logger.verbose(`User "${authCredentialsDto.username}" login.`);
     return this.authService.signIn(authCredentialsDto);
   }
 
